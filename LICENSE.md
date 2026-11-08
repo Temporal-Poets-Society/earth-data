@@ -26,6 +26,8 @@ from Copernicus GLO-90, `eula_F.pdf`) with them. The data comes without warranty
 | GLiM and GUM (Hartmann and Moosdorf; Börker et al.) | `global-gum.egt` | [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) |
 | Popovs et al. 2022, Quaternary thickness of Latvia | `latvia-quaternary.egt` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | EMODnet Geology seabed substrate | `baltic-emodnet-seabed.egt` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| IGME 5000, the 1:5 Million International Geological Map of Europe (BGR, Hannover) | `europe-igme5000.egt` | BGR's terms of use for its free geodata, with the credit "Datenquelle: IGME5000, (c) BGR Hannover, 2007" |
+| CRUST1.0 (Laske, Masters, Ma and Pasyanos 2013) | `global-crust1.egt` | No licence stated; cited as its authors ask (Reference Earth Model site) |
 
 ## Everything else in this repository
 
