@@ -1,0 +1,235 @@
+Earth data (release ed-v1): sources and attribution
+=================================================
+
+These files were made for the Vintage Story mod Earth from the sources below. Each source's licence applies to the
+files made from it. Keep this file with the data when you redistribute it.
+
+--------------------------------------------------------------------------------
+Terrain and water (terrain.bin, summits.bin, peaks.json, glaciers.bin, rivers*.bin, islands.bin, coasts.bin, lakes.bin, shores.bin, sea-referee.bin, stream-heads-1.bin, glo90c-*.bin)
+--------------------------------------------------------------------------------
+Earth Map data sources (all free to use and redistribute):
+
+- ETOPO 2022 60 Arc-Second Global Relief Model (surface and bed elevation).
+  NOAA National Centers for Environmental Information. Public domain. doi:10.25921/fd45-gt74
+- University of Delaware Air Temperature & Precipitation v5.01 (monthly normals, land).
+  Provided by the NOAA PSL, Boulder, Colorado, USA, https://psl.noaa.gov
+- NCEP/NCAR Reanalysis 1, 2 m air temperature long-term means 1991-2020 (oceans).
+  Provided by the NOAA PSL, Boulder, Colorado, USA, https://psl.noaa.gov
+- GPCP Version 2.3 Combined Precipitation Data Set, long-term means 1991-2020 (oceans).
+  Provided by the NOAA PSL, Boulder, Colorado, USA, https://psl.noaa.gov
+- Natural Earth 1:10m lakes (+ Europe and North America supplements). Public domain. naturalearthdata.com
+- GSHHG 2.3.7, A Global Self-consistent, Hierarchical, High-resolution Geography Database (full-resolution shorelines,
+  for the small islands in islands.bin). Wessel, P., and W. H. F. Smith (1996), J. Geophys. Res., 101(B4), 8741-8743.
+  www.soest.hawaii.edu/pwessel/gshhg. Distributed under the GNU Lesser General Public License, version 3 or later.
+- HydroRIVERS v1.0 (large rivers; and the heads of its perennial streams, for stream-heads-1.bin). Lehner, B.,
+  Grill G. (2013): Global river hydrography and network routing: baseline data and new approaches to study the world's
+  large river systems. Hydrological Processes, 27(15): 2171-2186. Data is available at www.hydrosheds.org. Used under
+  the HydroSHEDS license (free for scientific, educational and commercial use, with attribution).
+- HydroLAKES v1.0 (reservoir pour points, to leave modern dams out). Messager, M.L., Lehner, B., Grill, G., Nedeva, I.,
+  Schmitt, O. (2016): Estimating the volume and age of water stored in global lakes using a geo-statistical approach.
+  Nature Communications, 7: 13603. Data is available at www.hydrosheds.org. Used under the HydroSHEDS license.
+- Wikidata (which Natural Earth lakes are reservoirs). CC0. www.wikidata.org
+- CHELSA V2.1 climatologies 1981-2010, monthly mean near-surface air temperature (tas) and CHELSA's orography (for
+  temperature.bin, worlds with climate rules v2). Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H.,
+  Soria-Auza, R.W., Zimmermann, N.E., Linder, H.P., Kessler, M. (2017): Climatologies at high resolution for the earth's
+  land surface areas. Scientific Data 4, 170122. https://doi.org/10.1038/sdata.2017.122 -- and Karger, D.N. et al. (2021):
+  Climatologies at high resolution for the earth's land surface areas, Version 2.1. EnviDat.
+  https://doi.org/10.16904/envidat.228.v2.1. www.chelsa-climate.org. Licensed under CC BY 4.0
+  (https://creativecommons.org/licenses/by/4.0/); changed: averaged to 2 arc-minutes, reduced to sea level with
+  6.5 C/km from CHELSA's own heights, yearly mean and coldest and warmest month, quantised to 0.1 C.
+- CHELSA V2.1 bioclimatic variables 1981-2010: bio12 (annual precipitation) and bio18 (precipitation of the warmest
+  quarter), with the monthly temperatures above (for rain.bin, decision 0031). Same citation and licence (CC BY 4.0);
+  changed: Vintage Story rainfall and summer dryness computed per 30" pixel, averaged to 2 arc-minutes.
+- CHELSA V2.1 BIOCLIM+ 1981-2010: pet_penman_mean (mean monthly Penman-Monteith potential evapotranspiration), with the
+  monthly temperatures above (for aridity.bin, worlds with aridity rules v1). Same citation and licence (CC BY 4.0);
+  changed: the ratio of a Holdridge estimate from the temperatures to the Penman-Monteith evapotranspiration per 30"
+  pixel, geometric mean over 2 arc-minutes, quantised in log2 steps of 1/64.
+- ETOPO 2022 30 Arc-Second Global Relief Model (surface elevation, for summits.bin: mountain tiles only, to restore
+  ridges and peaks). NOAA National Centers for Environmental Information. Public domain. doi:10.25921/fd45-gt74
+- Randolph Glacier Inventory 6.0 (version 6.2 geometry fixes), for glaciers.bin. RGI Consortium (2017): Randolph Glacier
+  Inventory - A Dataset of Global Glacier Outlines: Version 6.0. Technical Report, Global Land Ice Measurements from
+  Space, Colorado, USA. Digital Media. https://doi.org/10.7265/N5-RGI-60. Licensed under CC BY 4.0; obtained from OGGM's
+  mirror (https://cluster.klima.uni-bremen.de/~oggm/rgi/); changed: rasterised to 30" coverage fractions.
+- PHYLACINE v1.2.1 present-natural ranges (assets/earthmap/config/fauna-vanilla.json, vanilla animals' natural ranges).
+  Faurby, S. et al. (2018): PHYLACINE 1.2: The Phylogenetic Atlas of Mammal Macroecology. Ecology 99, 2626. CC0 1.0.
+- WWLLN Global Lightning Climatology (WGLC), monthly climatology at 0.5 degrees. Kaplan, J.O. and Lau, K.H.-K. (2021):
+  The WGLC global gridded lightning climatology and time series. Earth System Science Data 13, 3219-3237; data on
+  Zenodo, https://doi.org/10.5281/zenodo.20277101 (CC BY 4.0 in the record's metadata, CC BY-SA 4.0 in its text).
+  Used only to fit the ten constants of src/Core/Thunder.cs (tools/fit_thunder.py); none of its data is in this folder.
+- GHCN-Daily (Global Historical Climatology Network - Daily), NOAA National Centers for Environmental Information. Menne,
+  M.J., Durre, I., Vose, R.S., Gleason, B.E., Houston, T.G. (2012): An overview of the Global Historical Climatology
+  Network-Daily Database. Journal of Atmospheric and Oceanic Technology 29, 897-910, doi:10.1175/JTECH-D-11-00103.1;
+  dataset doi:10.7289/V5D21VHZ (accessed 7 November 2026). The daily precipitation of 56 stations gave the monthly
+  wet-day and dry-spell numbers the weather's wet and dry spells were fitted to (tools/ghcnd_dryspells.py); none of its
+  data is in this folder.
+- METAR reports from the Iowa Environmental Mesonet's archive, Iowa State University, https://mesonet.agron.iastate.edu/
+  (accessed 8 November 2026). The share of routine reports with precipitation, month by month at the airports next to
+  those stations in 2017-2023, gave the rain rate of src/Core/WeatherModel.cs (tools/iem_metar_precip.py); none of the
+  reports is in this folder.
+
+Not in this folder: worlds made with Land heights "Copernicus GLO-90" (decision 0051, test) download tiles from the public
+copernicus-dem-90m bucket and keep them converted (whole metres, compressed) in VintagestoryData/ModData/earth/glo90.
+Produced using Copernicus WorldDEM(TM)-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided
+under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus
+programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM(TM)-90.
+Earth is not endorsed by the Copernicus programme, ESA, DLR or Airbus. data/glo90-tiles.bin (which 1° squares the
+dataset has) is derived from the bucket's listing.
+
+Not in this folder either: the height data packs Earth Height Data 1/4 to 4/4 (earthheightdata1..4, decision 0053, test)
+hold glo90c-index.bin, glo90c-1.bin .. glo90c-4.bin (Copernicus GLO-90 averaged to 24" cells by tools/Glo90Coarse) and
+rivers-glo90.bin (Earth's rivers from HydroRIVERS and HydroLAKES laid onto GLO-90's valley floors by tools/RiverSnap).
+Each pack's earthdata/ATTRIBUTION.txt has the full Copernicus notice and how the data was changed; the notice above
+applies to them as well.
+
+The files in this folder are derived from these datasets by tools/bake_earth.py, tools/bake_rivers.py, tools/bake_chelsa.py,
+tools/bake_rain.py, tools/bake_aridity.py, tools/bake_summits.py and tools/bake_glaciers.py (resampled, quantised, compressed).
+
+Decision 0032 ecology catalogue: terrestrial stratovolcano factual records from the SI/USGS Holocene list adapted
+by Oregon State University Volcano World, https://volcano.oregonstate.edu/volcanoes-2 (retrieved 2026-10-30).
+Changed: all 712 stratovolcano rows with numeric coordinates and positive elevation selected; ecology only.
+Historical coordinates/heights are approximate; this is not the current complete GVP database or an ash-deposit map.
+Optional peaks.json: GeoNames allCountries, CC BY 4.0, https://download.geonames.org/export/dump/readme.txt.
+Changed by tools/bake_peaks.ps1: class T, PK/PKS/MT/VLC; explicit elevation only; deduplicated and spatially thinned.
+peaks.json is baked from allCountries.zip downloaded 30 October 2026 (tools/bake_peaks.ps1); 155 318 peaks with explicit elevations. Mount Everest (GeoNames 1283416) uses the 2020 survey, 8849 m. The nine summit anchors are the fallback when the file is absent.
+Decision 0057 geothermal sites, compiled into the mod by tools/bake_geothermal_sites.py (positions and kind only):
+- Holocene volcanoes (src/Core/GeothermalSites.cs): Global Volcanism Program, Smithsonian Institution, Volcanoes of the
+  World, Holocene volcano list, https://volcano.si.edu, retrieved 7 November 2026 through its web feature service
+  (GVP-VOTW:Smithsonian_VOTW_Holocene_Volcanoes). Changed: 1,214 volcanoes classed by evidence and last eruption; names kept.
+  Landform and summit elevation kept for volcano bodies (geothermal rules 2).
+- Activity in the game's time: Global Volcanism Program, Smithsonian Institution, Volcanoes of the World, Holocene
+  eruption list, same service (GVP-VOTW:Smithsonian_VOTW_Holocene_Eruptions), retrieved 7 November 2026. Changed: reduced
+  to one flag per volcano, a confirmed eruption starting 1300-1700 or at least five since.
+- Hot springs and geysers (src/Core/GeothermalSites.cs): GeoNames allCountries, CC BY 4.0, the download above; feature
+  codes SPNT and GYSR without an OpenStreetMap spring within 1 km (287).
+- Hot springs and geysers (src/Core/GeothermalSitesOsm.cs): (c) OpenStreetMap contributors, https://www.openstreetmap.org/copyright.
+  That list is a derivative database of OpenStreetMap and is available under the Open Database License 1.0,
+  https://opendatacommons.org/licenses/odbl/1-0/. Changed: natural=hot_spring and natural=geyser of 7 November 2026
+  (Overpass API), areas by their centre, those tagged below 25 C and cold-water geysers left out, duplicates within 100 m
+  merged (5,234).
+reservoirs-v1.json: audited Natural Earth/HydroLAKES source correction for Q2007652 (Razazah, HydroLAKES 146,
+GRanD 4474). NASA describes the modern diversion reservoir: https://science.nasa.gov/earth/earth-observatory/iraq-lakes-bounce-back-147315/.
+- Paleogeografische kaarten, Atlas van Nederland in het Holoceen (the paleogeographic maps of the Netherlands of 1250,
+  1500 and 2000 AD, layers paleogeografie1250nc, paleogeografie1500nc and paleogeografie2000nc), for works-1318.bin
+  (decision 0064). Rijksdienst voor het Cultureel Erfgoed (RCE), after Vos, P.C. et al., Deltares and TNO. Licensed under
+  CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); obtained from RCE's WFS
+  (https://services.rce.geovoorziening.nl/paleogeografischekaarten/wfs) on 8 November 2026; changed: the three maps
+  compared class by class into the areas that were sea, lake or land in 1318 where people changed them after it,
+  simplified to about 18 m and cut at whole degrees.
+
+--------------------------------------------------------------------------------
+Ground sets (*.egt, *.egts) and soil sites (soil-site.bin)
+--------------------------------------------------------------------------------
+Earth regional geology rules v1 (2026-09-29, frozen for existing saves) and v2 (2026-10-02, new worlds)
+
+GLiM: Hartmann, Jens; Moosdorf, Nils (2012): Global Lithological Map Database v1.0 (gridded to 0.5 degree spatial resolution). PANGAEA. https://doi.org/10.1594/PANGAEA.788537
+Supplement: Hartmann & Moosdorf (2012), The new global lithological map database GLiM, https://doi.org/10.1029/2012GC004370
+
+GUM: Boerker, Janine; Hartmann, Jens; Amann, Thorben; Romero-Mujalli, Gibran (2018): Global Unconsolidated Sediments Map Database v1.0 (shapefile and gridded to 0.5 degree spatial resolution). PANGAEA. https://doi.org/10.1594/PANGAEA.884822
+Supplement: Boerker et al. (2018), Terrestrial Sediments of the Earth, https://doi.org/10.1002/2017GC007273
+
+Both datasets licensed Creative Commons Attribution 3.0 Unported: https://creativecommons.org/licenses/by/3.0/
+Changes: categorical ASCII grids rebaked as unsigned-byte Base64 arrays; nodata=0. GUM regridded by containing source cell at GLiM cell centres, without numeric interpolation or extrapolation. The same grid file serves both rules versions. Rules v2 additionally, at load time and without editing the file: fills GLiM ocean/water/no-data/ice cells within 2 cells of mapped land with the nearest mapped cell's categories (so coastal land and islands that fall in ocean cells get bedrock), and assigns each point to the nearest of one jittered seed per cell (irregular contacts instead of the source grid squares). Runtime selects source categories; game-scale stratigraphy, material proxies, hydrology conditions, the broad Baltic pilot envelope and the v2 chalk envelopes (southern England, Paris Basin, Denmark/Scania/Rugen, Austin Chalk, Selma/Black Belt) are Earth-authored approximations drawn from general published geological knowledge, not digitised survey contacts, outputs of the source authors, or endorsements by the source authors or the survey organisations named in the rules file.
+
+GUM has no source coverage north of 83.514743N. GLiM coarse water/ice/no-data are not evidence of absent bedrock. Unknown bedrock preserves legacy strata. Metallic ore geography is handled by the separate regional ore rules; vanilla bauxite strata (and in v2 kimberlite and suevite, the diamond hosts) are never replaced by the regional strata.
+
+Earth ground columns prototype (2026-11-06, off by default; tiles in config/ground/, rules in config/ground-rules-v1.json)
+
+SoilGrids 2.0: Poggio, L. et al. (2021), SoilGrids 2.0: producing soil information for the globe with quantified spatial uncertainty, SOIL 7, 217-240, https://doi.org/10.5194/soil-7-217-2021. ISRIC - World Soil Information, licensed CC BY 4.0. Used: most probable WRB group, clay and pH (15-30 cm), Baltic clip resampled to 0.01 degree; groups implausible in the Baltic climate replaced by the most common plausible group nearby; towns and lakes filled from the nearest mapped cell within about 3 km.
+Latvian Quaternary thickness: Popovs, K. et al. (2022), Bedrock surface topography of Latvia [dataset], Zenodo, https://doi.org/10.5281/zenodo.7053754, licensed CC BY 4.0. Used: band 2 (Quaternary thickness), reprojected from EPSG:25884 to 0.01 degree.
+EMODnet Geology: seabed substrate 1:250,000, Folk 7 classes (EMODnet Geology partners, https://emodnet.ec.europa.eu/en/geology), licensed CC BY 4.0. Used: class names rasterised at 0.01 degree cell centres; "no data" and "restricted data" polygons left out.
+CRUST1.0: Laske, G., Masters, G., Ma, Z. and Pasyanos, M. (2013), Update on CRUST1.0 - A 1-degree Global Model of Earth's Crust, Geophys. Res. Abstracts 15, EGU2013-2658. Used: total sediment thickness as depth to basement, corrected in the Baltic to deep boreholes listed in tools/ground/basement-control-baltic.csv.
+IGME 5000: Asch, K. (2005), The 1:5 Million International Geological Map of Europe and Adjacent Areas, BGR. Used for the prototype only (terms unchecked): age name and lithology words of the pre-Quaternary unit, rasterised at 0.05 degree.
+GUM (above) also gives the surface sediment unit. Stratigraphic thicknesses, recipes, compaction depths and the basement mix are Earth-authored approximations from the sources listed in docs/research/geology-columns-2026-11-06, not outputs of the data providers.
+
+World-wide ground sets at 2 arc-minutes (2026-11-07; config/ground/global-*.egts, baked by tools/ground/bake_global.py):
+SoilGrids 2.0 (above): WRB most probable group, clay and pH at 15-30 cm, through the ISRIC WCS at 2 arc-minutes; towns and lakes filled from the nearest mapped cell within about 11 km. Licensed CC BY 4.0.
+Depth to bedrock: Shangguan, W., Hengl, T., Mendes de Jesus, J., Yuan, H. and Dai, Y. (2017), Mapping the global depth to bedrock for land surface modeling, J. Adv. Model. Earth Syst. 9, 65-88, https://doi.org/10.1002/2016MS000686 (BDTICM, SoilGrids 2017, ISRIC), licensed CC BY 4.0. Changes: 30 arc-second values averaged to 2 arc-minutes and rounded to about 2.5 % steps; capped per surface unit by Earth's rules.
+Ice-sheet extents: Batchelor, C.L. et al. (2019), The configuration of Northern Hemisphere ice sheets through the Quaternary, Nature Communications 10, 3713, https://doi.org/10.1038/s41467-019-11601-2; shapefiles at https://osf.io/7jen3/ (no licence stated there; the article is CC BY 4.0; to confirm with the authors before a release). Used: best estimates for the LGM, MIS 6, MIS 12 and MIS 16, rasterised.
+Permafrost: Obu, J. et al. (2019), Northern Hemisphere permafrost map based on TTOP modelling for 2000-2016 at 1 km2 scale, Earth-Science Reviews 193, 299-316; dataset Obu et al. (2018), PANGAEA, https://doi.org/10.1594/PANGAEA.888600, licensed CC BY 3.0. Used: permafrost probability, overview at about 3.7 km, sampled at cell centres.
+Geological provinces: Hasterok, D. et al. (2022), New maps of global geological provinces and tectonic plates, Earth-Science Reviews 231, 104069, https://doi.org/10.1016/j.earscirev.2022.104069; data Zenodo 5093930, licensed CC BY 4.0. Used: province type, last orogen and crust type, rasterised.
+Bedrock era: Chorlton, L.B. (2007), Generalized geology of the world: bedrock domains and major faults in GIS format, Geological Survey of Canada, Open File 5529, https://doi.org/10.4095/223767. Contains information licensed under the Open Government Licence - Canada (https://open.canada.ca/en/open-government-licence-canada). Used: era and general bedrock class, rasterised.
+
+Soil sites for the fire rules and the trees' soil fit (2026-11-07; config/soil-site.bin, baked by tests/ZoneTests --bake-soil-site from config/ground/global-soilgrids.egts):
+SoilGrids 2.0 (above): in the 0.2 degree square around each 0.1 degree cell, the share of grassland soils (Chernozems, Phaeozems, Kastanozems), of waterlogged and floodplain soils (Gleysols, Histosols, Stagnosols, Planosols, Fluvisols) and of nutrient-poor soils (Podzols, Arenosols, Histosols, Ferralsols, Acrisols, Plinthosols) among the 2 arc-minute WRB groups, and the mean topsoil pH. Licensed CC BY 4.0. The fire rule itself was calibrated against RESOLVE Ecoregions 2017 (Dinerstein, E. et al. (2017), BioScience 67, 534-545, CC BY 4.0) and checked against the WWLLN Global Lightning Climatology (Kaplan, J.O., Zenodo 20277101); neither dataset ships with the mod.
+
+--------------------------------------------------------------------------------
+Wetlands (wetlands.bin)
+--------------------------------------------------------------------------------
+Earth wetland grid (config/wetlands.bin, baked 2026-11-07 by tools/bake_wetlands.py)
+
+Source: Global Lakes and Wetlands Database, version 2 (GLWD v2), combined classes grids (GeoTIFF, 15 arc-seconds).
+Lehner, B., Anand, M., Fluet-Chouinard, E., Tan, F., Aires, F., Allen, G. H., Bousquet, P., Canadell, J. G., Davidson, N.,
+Ding, M., Finlayson, C. M., Gumbricht, T., Hilarides, L., Hugelius, G., Jackson, R. B., Korver, M. C., Liu, L.,
+McIntyre, P. B., Nagy, S., Olefeldt, D., Pavelsky, T. M., Pekel, J.-F., Poulter, B., Prigent, C., Wang, J.,
+Worthington, T. A., Yamazaki, D., Zhang, X., and Thieme, M. (2025): Mapping the world's inland surface waters: an upgrade
+to the Global Lakes and Wetlands Database (GLWD v2). Earth System Science Data 17, 2277-2329.
+https://doi.org/10.5194/essd-17-2277-2025
+Data: https://www.hydrosheds.org/products/glwd (reference information: https://doi.org/10.6084/m9.figshare.28519994)
+(The GLWD v2.0 Technical Documentation of April 2025 also lists Matthews, E. among the authors of this citation.)
+
+Licence: Creative Commons Attribution 4.0 International, https://creativecommons.org/licenses/by/4.0/
+The GLWD authors ask that the data are not redistributed whole in their original format; Earth ships only the
+aggregate described below, not the GLWD grids. The data come "as is" and the GLWD authors do not endorse Earth.
+
+Changes made: the per-pixel dominant wetland class (GLWD_v2_0_main_class) and total wetland percentage
+(GLWD_v2_0_area_pct) were combined, each pixel's whole wetland percentage counting for its dominant class, and
+aggregated to the share of each 0.1 degree cell (180 W to 180 E, 84 N to 60 S; sea counts as dry) covered by seven
+groups of GLWD classes, stored as bytes (share x 250):
+  bog          open peatland: 23, 25, 27 (arctic/boreal, temperate, tropical/subtropical peatland, non-forested)
+  peatforest   wooded peatland: 22, 24, 26
+  swampforest  flooded swamp forest: 8, 10, 12, 16 (lacustrine, riverine regularly or seasonally flooded, palustrine
+               regularly flooded; forested)
+  marsh        flooded open marsh and delta: 9, 11, 13, 17 (non-forested), 30 large river delta, 31 other coastal wetland
+  mangrove     28
+  saltmarsh    29
+  damp         seasonally saturated or ephemeral ground: 14, 15, 18, 19, 20, 21, forested or not (GLWD's least certain
+               classes; their wooded or open state is largely today's land use, so Earth reads them as wet ground only)
+Lakes, reservoirs, rivers and streams (1-7), salt pans (32) and rice paddies (33) are left out. Minor classes inside
+mixed 15" pixels are not represented. GLWD v2 maps contemporary conditions; Earth's use of it (for any period) is an
+approximation by Earth, not by the GLWD authors.
+
+--------------------------------------------------------------------------------
+Floodplains (floodplains.bin)
+--------------------------------------------------------------------------------
+Earth floodplain grid (config/floodplains.bin, baked 2026-11-08 by tools/FloodplainBake; decision 0048, soil rules 3)
+
+What it is: the level (m) the natural flood of Earth's dry-season rivers reaches, on a 15 arc-second grid, for arid land
+only. In worlds with ground columns and soil rules 3, arid ground at or below that level keeps its topsoil (the Nile
+valley and delta, Mesopotamia, the Indus plain). It is Earth's own model of a flood, not a measured flood map.
+
+Sources:
+- Copernicus DEM GLO-90 (the Copernicus WorldDEM(TM)-90, COP-DEM_GLO-90-DGED/2022_1), as Earth's GLO-90 worlds keep it
+  (VintagestoryData/ModData/earth/glo90, with the reservoirs of its dam list removed). Used under the "Licence for
+  Copernicus DEM instance COP-DEM-GLO-90-F Global 90m Full, Free & Open".
+  Produced using Copernicus WorldDEM(TM)-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided
+  under COPERNICUS by the European Union and ESA; all rights reserved. The organisations in charge of the Copernicus
+  programme by law or by delegation do not incur any liability for any use of the Copernicus WorldDEM(TM)-90.
+- Earth's rivers: HydroRIVERS v1.0 (Lehner, B., Grill G. (2013): Global river hydrography and network routing: baseline
+  data and new approaches to study the world's large river systems. Hydrological Processes, 27(15): 2171-2186; data at
+  www.hydrosheds.org, used under the HydroSHEDS license) as laid onto GLO-90 by Earth (rivers-glo90.bin), with their
+  discharge and the share of it from moist catchments.
+- Earth's climate (the aridity indices, Holdridge's from the temperatures and rain and the Penman-Monteith one of
+  aridity.bin from CHELSA V2.1 BIOCLIM+, that pick which rivers run through dry land), as in Earth's ATTRIBUTION.txt.
+Earth is not endorsed by the Copernicus programme, ESA, DLR, Airbus or the HydroSHEDS authors.
+
+How it was made (tools/FloodplainBake, from the terrain model a new 1:10 GLO-90 world builds with earth-1.0.3-tall.22
+and its data packs): every river course of 10 m3/s or more, with at least 10 m3/s from moist catchments, where it runs
+through land with an aridity index below 0.3 (either index), floods 1.2 x Q^0.3 m (1.5 to 15 m) above its water (its course level or
+GLO-90's lowest point within 3", whichever is higher). The flood falls 0.15 m per km of the way out and covers connected
+land at or below it, on a 7.5" grid whose ground is the lowest GLO-90 point within about 6" (under town and palm
+heights); seas and lakes stop it; it never stands above the top of the river nearest in a straight line, nor covers
+ground more than one flood height below that river's water. Each 15" cell keeps the highest flood among its four 7.5"
+cells, the cells around the flood the same level less one cell's fall; levels are stored in decimetres.
+
+--------------------------------------------------------------------------------
+Copernicus GLO-90 (glo90c-*.bin, sea-referee.bin, rivers-glo90*.bin are derived from it)
+--------------------------------------------------------------------------------
+Produced using Copernicus WorldDEM(TM)-90 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided
+under COPERNICUS by the European Union and ESA; all rights reserved.
+
+The organisations in charge of the Copernicus programme by law or by delegation do not incur any liability for any
+use of the Copernicus WorldDEM(TM)-90.
+
+This is adapted data: the included GLO-90 land heights (glo90c-*.bin) are GLO-90 reduced in resolution, and the
+water corrections (sea-referee.bin, rivers-glo90*.bin) are derived from GLO-90's water body mask. Licence: eula_F.pdf
+in this release.
