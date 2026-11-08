@@ -28,7 +28,7 @@ from Copernicus GLO-90, `eula_F.pdf`) with them. The data comes without warranty
 | EMODnet Geology seabed substrate | `baltic-emodnet-seabed.egt` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | IGME 5000, the 1:5 Million International Geological Map of Europe (BGR, Hannover) | `europe-igme5000.egt` | BGR's terms of use for its free geodata, with the credit "Datenquelle: IGME5000, (c) BGR Hannover, 2007" |
 | Batchelor et al. 2019, Northern Hemisphere ice-sheet reconstructions (data on OSF, project 7jen3) | `global-glaciation.egts` | The article is [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/); the data states no licence and is credited as the authors' work |
-| CRUST1.0 (Laske, Masters, Ma and Pasyanos 2013) | `global-crust1.egt` | No licence stated; cited as its authors ask (Reference Earth Model site) |
+| CRUST1.0 (Laske, Masters, Ma and Pasyanos 2013), in the Baltic corrected to deep boreholes | `global-crust1.egt`, `baltic-basement.egt` | No licence stated; cited as its authors ask (Reference Earth Model site) |
 
 ## Everything else in this repository
 
