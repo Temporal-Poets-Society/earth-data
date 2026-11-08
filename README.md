@@ -13,7 +13,7 @@ The full GLO-90 land heights (8.6 GB) and the lake and river outlines are in
 
 ## Files
 
-The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 36 files, 273.5 MB, plus `manifest.json`,
+The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 37 files, 273.5 MB, plus `manifest.json`,
 `ATTRIBUTION.txt` and `eula_F.pdf`.
 
 | File | Group | Bytes | What it is | SHA-256 |
@@ -54,6 +54,7 @@ The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 36 files, 273.5 
 | `europe-igme5000.egt` | ground | 4,139 | 2′ ground set: pre-Quaternary age and rock type in Europe (IGME 5000) | `fa64748b2573d0a24f4e9f09196182bdb6f577e606d220688060834cb2d5c11b` |
 | `global-crust1.egt` | ground | 54,610 | 2′ ground set: depth to basement from sediment thickness (CRUST1.0) | `b9531d7b0d02534e380090a57a45c25a60e8b7d21566a0c07b252429030a1a5e` |
 | `global-glaciation.egts` | ground | 138,764 | 2′ ground set: where Northern Hemisphere ice sheets stood (last glacial maximum and older), Batchelor et al. 2019 | `b3879efe65a0f9bd92c3022bc8eccd77bdf0b7d168d048aa027b01d2634e5dac` |
+| `baltic-basement.egt` | ground | 25,178 | 2′ ground set: depth to basement in the Baltic, CRUST1.0 corrected to deep boreholes | `db62dbdcde817f9c6f79f3639dd7c33c8aef83e1000610cef87d3454df60053a` |
 
 To install by hand (a server without internet), put the files in `VintagestoryData/ModData/earth/data/` on the server
 (or the single-player machine). Earth checks each file's size and SHA-256 and uses only files that match.
