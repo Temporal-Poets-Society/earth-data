@@ -214,6 +214,12 @@
                       "group":  "ground",
                       "bytes":  54610,
                       "sha256":  "b9531d7b0d02534e380090a57a45c25a60e8b7d21566a0c07b252429030a1a5e"
+                  },
+                  {
+                      "name":  "global-glaciation.egts",
+                      "group":  "ground",
+                      "bytes":  138764,
+                      "sha256":  "b3879efe65a0f9bd92c3022bc8eccd77bdf0b7d168d048aa027b01d2634e5dac"
                   }
               ]
 }
