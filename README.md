@@ -13,7 +13,7 @@ The full GLO-90 land heights (8.6 GB) and the lake and river outlines are in
 
 ## Files
 
-The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 33 files, 273.3 MB, plus `manifest.json`,
+The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 35 files, 273.3 MB, plus `manifest.json`,
 `ATTRIBUTION.txt` and `eula_F.pdf`.
 
 | File | Group | Bytes | What it is | SHA-256 |
@@ -51,6 +51,8 @@ The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 33 files, 273.3 
 | `wetlands.bin` | ground | 2,288,691 | wetland shares (GLWD v2) | `644824a1e2942791dd2625034217cd6640cd2196b79cde2213ab22376c40f932` |
 | `soil-site.bin` | ground | 1,618,438 | soil sites for the fire rules and the trees' soil fit | `407f6dc3657bb396f00732c694cb3b26d8d8c08cadde4a6be3f324c48f2acb25` |
 | `floodplains.bin` | ground | 2,707,673 | natural flood levels of dry-season rivers in arid land | `e7b8f25ff0700548d256c20dc0dc81a6c61bb62d1cb1299e0ae52d3a910ef57f` |
+| `europe-igme5000.egt` | ground | 4,139 | 2′ ground set: pre-Quaternary age and rock type in Europe (IGME 5000) | `fa64748b2573d0a24f4e9f09196182bdb6f577e606d220688060834cb2d5c11b` |
+| `global-crust1.egt` | ground | 54,610 | 2′ ground set: depth to basement from sediment thickness (CRUST1.0) | `b9531d7b0d02534e380090a57a45c25a60e8b7d21566a0c07b252429030a1a5e` |
 
 To install by hand (a server without internet), put the files in `VintagestoryData/ModData/earth/data/` on the server
 (or the single-player machine). Earth checks each file's size and SHA-256 and uses only files that match.
@@ -63,9 +65,9 @@ older Earth still finds the data it was made from.
 
 ### Not yet here
 
-Four 2′ ground sets that Earth's ground columns read are held back until their licences are confirmed:
-`global-glaciation.egts` (ice-sheet extents, Batchelor et al. 2019: the article is CC BY 4.0, the shapefiles state no
-licence), `europe-igme5000.egt` (IGME 5000, BGR), `global-crust1.egt` and `baltic-basement.egt` (CRUST1.0).
+One 2′ ground set that Earth's ground columns read is held back until its licence is confirmed: `global-glaciation.egts`,
+the Northern Hemisphere ice-sheet extents of Batchelor et al. 2019 (the article is CC BY 4.0; the shapefiles on OSF
+state no licence).
 
 ### manifest.json
 
