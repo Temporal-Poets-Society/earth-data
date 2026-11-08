@@ -220,6 +220,12 @@
                       "group":  "ground",
                       "bytes":  138764,
                       "sha256":  "b3879efe65a0f9bd92c3022bc8eccd77bdf0b7d168d048aa027b01d2634e5dac"
+                  },
+                  {
+                      "name":  "baltic-basement.egt",
+                      "group":  "ground",
+                      "bytes":  25178,
+                      "sha256":  "db62dbdcde817f9c6f79f3639dd7c33c8aef83e1000610cef87d3454df60053a"
                   }
               ]
 }
