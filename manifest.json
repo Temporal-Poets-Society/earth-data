@@ -1,0 +1,207 @@
+{
+    "format":  "earth-data",
+    "formatVersion":  1,
+    "release":  "ed-v1",
+    "installTo":  "VintagestoryData/ModData/earth/data",
+    "note":  "Server data for the Vintage Story mod Earth 2.0 and later (decision 0066). File names and contents never change within a release; new data gets a new file name or tag.",
+    "files":  [
+                  {
+                      "name":  "terrain.bin",
+                      "group":  "terrain",
+                      "bytes":  30347837,
+                      "sha256":  "e733cca42ac825c13005482a87f4abf2147480bcb7c41f5c2abbc71cde1e4640"
+                  },
+                  {
+                      "name":  "summits.bin",
+                      "group":  "terrain",
+                      "bytes":  2474923,
+                      "sha256":  "9fe7dfacf0ee051c0c22fd98c20d2deb88831bafc5c17e3b09e23c7014368704"
+                  },
+                  {
+                      "name":  "peaks.json",
+                      "group":  "terrain",
+                      "bytes":  6642227,
+                      "sha256":  "a779f5a67940b797b420437e0b0f574c3161b839ef64e4c0df98ced9293e7e5f"
+                  },
+                  {
+                      "name":  "glaciers.bin",
+                      "group":  "terrain",
+                      "bytes":  1220181,
+                      "sha256":  "06c854595621eacfec624ec445ad80a9da32026ec87b1a28618a3ca71b0216ab"
+                  },
+                  {
+                      "name":  "rivers.bin",
+                      "group":  "water",
+                      "bytes":  12132790,
+                      "sha256":  "aaebda1d8abf95a75e740c1d21774aa360419582bf774a4fcdda21e73446a8b5"
+                  },
+                  {
+                      "name":  "islands.bin",
+                      "group":  "water",
+                      "bytes":  9891240,
+                      "sha256":  "2b9bc440aede37e03bc2f28219da50ec650fdf05c24caa46966d2944b4d72dc6"
+                  },
+                  {
+                      "name":  "coasts.bin",
+                      "group":  "water",
+                      "bytes":  9477193,
+                      "sha256":  "2d5e2ad38166113f0ad7253f699a9ca556730717f365c423738d18ad9a5dfc1f"
+                  },
+                  {
+                      "name":  "lakes.bin",
+                      "group":  "water",
+                      "bytes":  17444,
+                      "sha256":  "cbec2376eba342320098a7856d6ec7f62463273699ae6c3edb064e794718560d"
+                  },
+                  {
+                      "name":  "shores.bin",
+                      "group":  "water",
+                      "bytes":  126401,
+                      "sha256":  "691673039f64ee8a85207ec8acad84ebd35b8b7b261ef99a23970b2c035cc8ce"
+                  },
+                  {
+                      "name":  "sea-referee.bin",
+                      "group":  "water",
+                      "bytes":  6262394,
+                      "sha256":  "3d823a2e280fa6c12504f07f87069f81ecc8721109c89b33eab4f6d8ff1c7fe7"
+                  },
+                  {
+                      "name":  "rivers-glo90-snap.bin",
+                      "group":  "water",
+                      "bytes":  4510852,
+                      "sha256":  "022a374374a662bdd0e015d9f37965d9a985b3fba7114000f8f949bdf375475f"
+                  },
+                  {
+                      "name":  "rivers-glo90-snap-2.bin",
+                      "group":  "water",
+                      "bytes":  8235212,
+                      "sha256":  "fa87c5895b6a0ff6df1def67f7908c994747d6effd51de4549b1f9a0c39c9dc1"
+                  },
+                  {
+                      "name":  "rivers-glo90-arms.bin",
+                      "group":  "water",
+                      "bytes":  185836,
+                      "sha256":  "8748a916ead1e2fd9202e076c9ad6b53d5c2e6427f7fdd3cfca21783b9be057a"
+                  },
+                  {
+                      "name":  "rivers-glo90-arms-2.bin",
+                      "group":  "water",
+                      "bytes":  223228,
+                      "sha256":  "e7f7f4408c9bb027b5e61ff1f522beadcda46ead3471986ba3baebb70b753bf7"
+                  },
+                  {
+                      "name":  "stream-heads-1.bin",
+                      "group":  "water",
+                      "bytes":  4712127,
+                      "sha256":  "bffcc5f7ee6f89bff423e261695f7ec1dd40449af08810c976da7143f25380ad"
+                  },
+                  {
+                      "name":  "glo90c-index.bin",
+                      "group":  "terrain",
+                      "bytes":  177324,
+                      "sha256":  "d55d203d436fa7b14d2d6c5de4a412090e9a0bc6f6ce0f70b969481f87926977"
+                  },
+                  {
+                      "name":  "glo90c-1.bin",
+                      "group":  "terrain",
+                      "bytes":  39594940,
+                      "sha256":  "69edad31d3df4e66afd1f10fe52ea61e54622c41295a36d510dfaad3813c558e"
+                  },
+                  {
+                      "name":  "glo90c-2.bin",
+                      "group":  "terrain",
+                      "bytes":  39791138,
+                      "sha256":  "1ce4ab9eab2fc57ca3f79bd8547ab0254d35dd4273989ffaa02763713a8276b4"
+                  },
+                  {
+                      "name":  "glo90c-3.bin",
+                      "group":  "terrain",
+                      "bytes":  39796380,
+                      "sha256":  "0b98d0ef7343c86b14ef5fa127db81e3cd5ff295359e357d152c116eb26b0a22"
+                  },
+                  {
+                      "name":  "glo90c-4.bin",
+                      "group":  "terrain",
+                      "bytes":  9984522,
+                      "sha256":  "6a669fda9a68b0c411dc7330014b2a93f401cb154823bdcbf5dc49251777e103"
+                  },
+                  {
+                      "name":  "rivers-glo90.bin",
+                      "group":  "water",
+                      "bytes":  23976950,
+                      "sha256":  "461aff76afe30afd8ef4261646a7ce7e72251e0e10652274670b118ffd6baed4"
+                  },
+                  {
+                      "name":  "baltic-emodnet-seabed.egt",
+                      "group":  "ground",
+                      "bytes":  15473,
+                      "sha256":  "797adda893b22b7dfcefc2cdf68b518ec4322dc26afa51cffe6f3573e943bbc1"
+                  },
+                  {
+                      "name":  "baltic-soilgrids.egt",
+                      "group":  "ground",
+                      "bytes":  526591,
+                      "sha256":  "2e6ff10d489fb4075749cd4e481a4551ae85c02e2dbb1492b594e789725b2cd8"
+                  },
+                  {
+                      "name":  "global-chorlton.egts",
+                      "group":  "ground",
+                      "bytes":  1519321,
+                      "sha256":  "c451fd9fab691adf4fba023d7027071906f44dfdff4e52a7046b7493d59fe57c"
+                  },
+                  {
+                      "name":  "global-gum.egt",
+                      "group":  "ground",
+                      "bytes":  32765,
+                      "sha256":  "cd7ef04a1c1f53758e4263f57f4401f1ec7cdcde41b2e2d80f617fd183e75c3f"
+                  },
+                  {
+                      "name":  "global-permafrost.egts",
+                      "group":  "ground",
+                      "bytes":  1364328,
+                      "sha256":  "2a0cc1b3576675f15c0068a13bb0bd365bc21ca21fe9431d1b166ef5559a2f6b"
+                  },
+                  {
+                      "name":  "global-provinces.egts",
+                      "group":  "ground",
+                      "bytes":  1576653,
+                      "sha256":  "b10ce96ad6b3d8bd29b52c6e9672d9ee8c1123aff15131e95a70b2730f805f96"
+                  },
+                  {
+                      "name":  "global-shangguan.egts",
+                      "group":  "ground",
+                      "bytes":  11840388,
+                      "sha256":  "c728dff70954b0a01e006b088957b0120db0655f14288ded9017baea6e413387"
+                  },
+                  {
+                      "name":  "global-soilgrids.egts",
+                      "group":  "ground",
+                      "bytes":  13199820,
+                      "sha256":  "2a940a389cc03609510e4e5b90a99f293e8ce324971b4014bbc9f05dae0b6e88"
+                  },
+                  {
+                      "name":  "latvia-quaternary.egt",
+                      "group":  "ground",
+                      "bytes":  89493,
+                      "sha256":  "4c03aa9813d49c2294fb327cda3ca1a1ae6f2c104e0f66f1ef266720f300c607"
+                  },
+                  {
+                      "name":  "wetlands.bin",
+                      "group":  "ground",
+                      "bytes":  2288691,
+                      "sha256":  "644824a1e2942791dd2625034217cd6640cd2196b79cde2213ab22376c40f932"
+                  },
+                  {
+                      "name":  "soil-site.bin",
+                      "group":  "ground",
+                      "bytes":  1618438,
+                      "sha256":  "407f6dc3657bb396f00732c694cb3b26d8d8c08cadde4a6be3f324c48f2acb25"
+                  },
+                  {
+                      "name":  "floodplains.bin",
+                      "group":  "ground",
+                      "bytes":  2707673,
+                      "sha256":  "e7b8f25ff0700548d256c20dc0dc81a6c61bb62d1cb1299e0ae52d3a910ef57f"
+                  }
+              ]
+}
