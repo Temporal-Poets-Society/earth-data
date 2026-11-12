@@ -5,7 +5,7 @@ These files were made for the Vintage Story mod Earth from the sources below. Ea
 files made from it. Keep this file with the data when you redistribute it.
 
 --------------------------------------------------------------------------------
-Terrain and water (terrain.bin, summits.bin, peaks.json, glaciers.bin, rivers*.bin, islands.bin, coasts.bin, lakes.bin, shores.bin, sea-referee.bin, stream-heads-1.bin, glo90c-*.bin)
+Terrain and water (terrain.bin, summits.bin, peaks.json, glaciers.bin, rivers*.bin, islands.bin, coasts.bin, lakes.bin, shores.bin, shores-osm-1.bin, sea-referee.bin, stream-heads-1.bin, glo90c-*.bin)
 --------------------------------------------------------------------------------
 Earth Map data sources (all free to use and redistribute):
 
@@ -115,6 +115,12 @@ GRanD 4474). NASA describes the modern diversion reservoir: https://science.nasa
   (https://services.rce.geovoorziening.nl/paleogeografischekaarten/wfs) on 8 November 2026; changed: the three maps
   compared class by class into the areas that were sea, lake or land in 1318 where people changed them after it,
   simplified to about 18 m and cut at whole degrees.
+- OpenStreetMap (beaches, for shores-osm-1.bin, added 12 November 2026: what a shore is made of; Earth decision 0070).
+  (c) OpenStreetMap contributors, https://www.openstreetmap.org/copyright. Available under the Open Database License
+  (ODbL) 1.0 (https://opendatacommons.org/licenses/odbl/1-0/); changed: natural=beach and natural=shingle of 12 November
+  2026 (through QLever's OSM planet endpoint, University of Freiburg), less the CanVec import's "could be dunes or
+  raised_beach", rasterised to 6 arc-second cells by their surface tag (sand, gravel, sand and gravel, rock, mud, none).
+  shores-osm-1.bin is a derived database under ODbL.
 
 --------------------------------------------------------------------------------
 Ground sets (*.egt, *.egts) and soil sites (soil-site.bin)

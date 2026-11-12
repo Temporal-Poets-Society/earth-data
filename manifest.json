@@ -60,6 +60,12 @@
                       "sha256":  "691673039f64ee8a85207ec8acad84ebd35b8b7b261ef99a23970b2c035cc8ce"
                   },
                   {
+                      "name":  "shores-osm-1.bin",
+                      "group":  "water",
+                      "bytes":  2220894,
+                      "sha256":  "3151094cc16f753550e48dd33540a3928b8bc1a31556a8904855d0893fc101de"
+                  },
+                  {
                       "name":  "sea-referee.bin",
                       "group":  "water",
                       "bytes":  6262394,

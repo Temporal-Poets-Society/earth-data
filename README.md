@@ -13,7 +13,7 @@ The full GLO-90 land heights (8.6 GB) and the lake and river outlines are in
 
 ## Files
 
-The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 37 files, 273.5 MB, plus `manifest.json`,
+The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 38 files, 275.7 MB, plus `manifest.json`,
 `ATTRIBUTION.txt` and `eula_F.pdf`.
 
 | File | Group | Bytes | What it is | SHA-256 |
@@ -27,6 +27,7 @@ The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 37 files, 273.5 
 | `coasts.bin` | water | 9,477,193 | coast outlines (GSHHG) | `2d5e2ad38166113f0ad7253f699a9ca556730717f365c423738d18ad9a5dfc1f` |
 | `lakes.bin` | water | 17,444 | terminal and salt lakes | `cbec2376eba342320098a7856d6ec7f62463273699ae6c3edb064e794718560d` |
 | `shores.bin` | water | 126,401 | lake shores | `691673039f64ee8a85207ec8acad84ebd35b8b7b261ef99a23970b2c035cc8ce` |
+| `shores-osm-1.bin` | water | 2,220,894 | what beaches are made of (OpenStreetMap's beaches by surface; Earth 2.0.0-rc.7, decision 0070; added 12 November 2026) | `3151094cc16f753550e48dd33540a3928b8bc1a31556a8904855d0893fc101de` |
 | `sea-referee.bin` | water | 6,262,394 | coast and island corrections from GLO-90's water mask | `3d823a2e280fa6c12504f07f87069f81ecc8721109c89b33eab4f6d8ff1c7fe7` |
 | `rivers-glo90-snap.bin` | water | 4,510,852 | river courses moved into the mask's water (courses 2-3) | `022a374374a662bdd0e015d9f37965d9a985b3fba7114000f8f949bdf375475f` |
 | `rivers-glo90-snap-2.bin` | water | 8,235,212 | river courses on the mask's water with measured widths (courses 4) | `fa87c5895b6a0ff6df1def67f7908c994747d6effd51de4549b1f9a0c39c9dc1` |

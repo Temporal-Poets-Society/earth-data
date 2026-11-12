@@ -16,6 +16,7 @@ from Copernicus GLO-90, `eula_F.pdf`) with them. The data comes without warranty
 | HydroSHEDS: HydroRIVERS, HydroLAKES (Lehner and Grill; Messager et al.) | `rivers.bin`, `rivers-glo90*.bin`, `shores.bin`, `stream-heads-1.bin`, `floodplains.bin` | HydroSHEDS licence (free for scientific, educational and commercial use, with attribution) |
 | Copernicus DEM GLO-90 and its water body mask | `glo90c-*.bin`, `sea-referee.bin`, `rivers-glo90*.bin`, `floodplains.bin` | Copernicus DEM licence (`eula_F.pdf`) |
 | Randolph Glacier Inventory 6.0 | `glaciers.bin` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| OpenStreetMap (beaches) | `shores-osm-1.bin` | [ODbL 1.0](https://opendatacommons.org/licenses/odbl/1-0/): a derived database, (c) OpenStreetMap contributors |
 | GeoNames | `peaks.json` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | GLWD v2 (Worthington et al. 2025) | `wetlands.bin` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
 | SoilGrids 2.0 (ISRIC) | `soil-site.bin`, `global-soilgrids.egts`, `baltic-soilgrids.egt` | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
