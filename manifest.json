@@ -232,6 +232,12 @@
                       "group":  "ground",
                       "bytes":  25178,
                       "sha256":  "db62dbdcde817f9c6f79f3639dd7c33c8aef83e1000610cef87d3454df60053a"
+                  },
+                  {
+                      "name":  "seasons-1.bin",
+                      "group":  "climate",
+                      "bytes":  58168345,
+                      "sha256":  "a81899dbdf8f1a71d7108bc186b58f4bc2bbfa35b10ff7ed1f0da46300e3357c"
                   }
               ]
 }

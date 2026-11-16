@@ -239,3 +239,45 @@ use of the Copernicus WorldDEM(TM)-90.
 This is adapted data: the included GLO-90 land heights (glo90c-*.bin) are GLO-90 reduced in resolution, and the
 water corrections (sea-referee.bin, rivers-glo90*.bin) are derived from GLO-90's water body mask. Licence: eula_F.pdf
 in this release.
+
+--------------------------------------------------------------------------------
+Monthly temperature layer (seasons-1.bin, Earth 2.1.0)
+--------------------------------------------------------------------------------
+- CHELSA V2.1 climatologies 1981-2010, monthly mean near-surface air temperature (tas) and monthly mean daily maximum
+  and minimum (tasmax, tasmin), for the monthly temperature layer (seasons-1.bin, worlds with seasons rules v1, Earth
+  decision 0086). Karger, D.N., Conrad, O., Böhner, J., Kawohl, T., Kreft, H., Soria-Auza, R.W., Zimmermann, N.E.,
+  Linder, H.P., Kessler, M. (2017): Climatologies at high resolution for the earth's land surface areas. Scientific Data
+  4, 170122. https://doi.org/10.1038/sdata.2017.122 -- and Karger, D.N. et al. (2021): Climatologies at high resolution
+  for the earth's land surface areas, Version 2.1. EnviDat. https://doi.org/10.16904/envidat.228.v2.1.
+  www.chelsa-climate.org. Licensed under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/); changed: averaged to
+  2 arc-minutes; each month's mean reduced to sea level with 6.5 C/km from CHELSA's own heights, moved to around 1318
+  (below) and quantised to 0.5 C; its day-night range (tasmax - tasmin) scaled by 1.10 to the GHCN-Daily stations and
+  quantised to 0.4 C; north of 84 N filled from the nearest cell.
+- ERA5 post-processed daily statistics on single levels, 2 m temperature daily mean, 1991-1998, 2000 and 2001, for the
+  same layer's day-to-day spread. Hersbach, H. et al. (2020): The ERA5 global reanalysis. Quarterly Journal of the Royal
+  Meteorological Society 146, 1999-2049. https://doi.org/10.1002/qj.3803 -- Copernicus Climate Change Service, Climate
+  Data Store: ERA5 post-processed daily statistics on single levels from 1940 to present (dataset
+  derived-era5-single-levels-daily-statistics). https://doi.org/10.24381/cds.4991cf48. Licensed under CC BY 4.0;
+  changed: per month, the standard deviation of the daily mean around its calendar-day cycle smoothed over 31 days,
+  interpolated bilinearly from 0.25 degrees to 2 arc-minutes, quantised to 0.2 C. Contains modified Copernicus Climate
+  Change Service information (2026). Neither the European Commission nor ECMWF is responsible for any use that may be
+  made of the Copernicus information or data it contains.
+- The means moved to around 1318 (Earth decision 0087), for the same layer and temperature-1318.bin:
+  - Last Millennium Reanalysis v2.1, gridded 2 m air temperature, ensemble mean. Tardif, R., Hakim, G.J., Perkins, W.A.,
+    Horlick, K.A., Erb, M.P., Emile-Geay, J., Anderson, D.M., Steig, E.J., Noone, D. (2019): Last Millennium Reanalysis
+    with an expanded proxy database and seasonal proxy modeling. Climate of the Past 15, 1251-1273.
+    https://doi.org/10.5194/cp-15-1251-2019 -- NOAA NCEI Paleoclimatology. Public domain (US government); changed: the
+    1300-1330 annual mean against 1951-1980.
+  - GISTEMP v4 (1200 km smoothing): GISTEMP Team (2024): GISS Surface Temperature Analysis (GISTEMP), version 4. NASA
+    Goddard Institute for Space Studies. https://data.giss.nasa.gov/gistemp/ -- Lenssen, N. et al. (2019), J. Geophys.
+    Res. Atmos. 124, 6307-6326. Public domain; changed: the 1981-2010 annual mean anomaly against 1951-1980, subtracted
+    from LMR's to give 1300-1330 against 1981-2010.
+  - CMIP6 PMIP4 past1000 and CMIP historical simulations, monthly near-surface air temperature (tas), from the Earth
+    System Grid Federation. Licensed under CC BY 4.0 by each modelling group: ACCESS-ESM1-5 (CSIRO), MIROC-ES2L (MIROC),
+    MRI-ESM2-0 (MRI), INM-CM4-8 (INM), EC-Earth3-Veg-LR (EC-Earth Consortium). Eyring, V. et al. (2016): Overview of the
+    Coupled Model Intercomparison Project Phase 6 (CMIP6), Geosci. Model Dev. 9, 1937-1958; Jungclaus, J.H. et al.
+    (2017): The PMIP4 contribution to CMIP6 - Part 3: the last millennium, Geosci. Model Dev. 10, 4005-4033. Changed:
+    each model's 1300-1330 (past1000) against its 1981-2010 (historical), by month less its yearly mean, interpolated to
+    2 degrees and averaged over the five models.
+  - Combined: level (LMR less GISTEMP) plus the models' monthly split, on a 2-degree grid, interpolated bilinearly to 2
+    arc-minutes and added to each month's mean before the mean is quantised.

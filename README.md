@@ -1,8 +1,10 @@
 # Earth data
 
-Server data for the Vintage Story mod **Earth** (from Earth 2.0): terrain, water and ground. The Earth server fetches
-these files once into `VintagestoryData/ModData/earth/data` before it builds a world, and every world and every later
-version of the mod reuses them. A game client needs none of them: the climate data a client reads is inside the mod.
+Server data for the Vintage Story mod **Earth** (from Earth 2.0): terrain, water and ground, and from Earth 2.1 the
+monthly temperature layer. The Earth server fetches these files once into `VintagestoryData/ModData/earth/data` before
+it builds a world, and every world and every later version of the mod reuses them. A game client needs none of them: the
+climate data a client reads is inside the mod (the monthly temperature layer reaches players' games from the server, a
+few tiles around each player).
 
 They used to be split over eight "data pack" mods only because an archive on the Vintage Story mod database may hold
 40 MB. Earth 2.0 is one mod, and these files live here instead (decision 0066 in the Earth repository).
@@ -13,7 +15,7 @@ The full GLO-90 land heights (8.6 GB) and the lake and river outlines are in
 
 ## Files
 
-The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 38 files, 275.7 MB, plus `manifest.json`,
+The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 39 files, 331.1 MB, plus `manifest.json`,
 `ATTRIBUTION.txt` and `eula_F.pdf`.
 
 | File | Group | Bytes | What it is | SHA-256 |
@@ -56,6 +58,7 @@ The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 38 files, 275.7 
 | `global-crust1.egt` | ground | 54,610 | 2′ ground set: depth to basement from sediment thickness (CRUST1.0) | `b9531d7b0d02534e380090a57a45c25a60e8b7d21566a0c07b252429030a1a5e` |
 | `global-glaciation.egts` | ground | 138,764 | 2′ ground set: where Northern Hemisphere ice sheets stood (last glacial maximum and older), Batchelor et al. 2019 | `b3879efe65a0f9bd92c3022bc8eccd77bdf0b7d168d048aa027b01d2634e5dac` |
 | `baltic-basement.egt` | ground | 25,178 | 2′ ground set: depth to basement in the Baltic, CRUST1.0 corrected to deep boreholes | `db62dbdcde817f9c6f79f3639dd7c33c8aef83e1000610cef87d3454df60053a` |
+| `seasons-1.bin` | climate | 58,168,345 | the monthly temperature layer on the 2′ grid: each month's mean (at sea level, as around 1318), day-night range and day-to-day spread, for worlds with seasons rules 1 (Earth 2.1.0, decisions 0086 and 0087; the server sends players the tiles around them) | `a81899dbdf8f1a71d7108bc186b58f4bc2bbfa35b10ff7ed1f0da46300e3357c` |
 
 To install by hand (a server without internet), put the files in `VintagestoryData/ModData/earth/data/` on the server
 (or the single-player machine). Earth checks each file's size and SHA-256 and uses only files that match.
