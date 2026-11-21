@@ -239,6 +239,9 @@ use of the Copernicus WorldDEM(TM)-90.
 This is adapted data: the included GLO-90 land heights (glo90c-*.bin) are GLO-90 reduced in resolution, and the
 water corrections (sea-referee.bin, rivers-glo90*.bin) are derived from GLO-90's water body mask. Licence: eula_F.pdf
 in this release.
+rivers-glo90-snap-3.bin and rivers-glo90-arms-3.bin (Earth 2.2.0) are the courses of rivers-glo90-snap-2.bin and
+rivers-glo90-arms-2.bin (HydroRIVERS and HydroLAKES, above) snapped again onto GLO-90's own grid, whose heights are
+points, not cell centres (courses rules 5, Earth decision 0092).
 
 --------------------------------------------------------------------------------
 Monthly temperature layer (seasons-1.bin, Earth 2.1.0)

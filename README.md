@@ -15,7 +15,7 @@ The full GLO-90 land heights (8.6 GB) and the lake and river outlines are in
 
 ## Files
 
-The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 39 files, 331.1 MB, plus `manifest.json`,
+The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 41 files, 337.8 MB, plus `manifest.json`,
 `ATTRIBUTION.txt` and `eula_F.pdf`.
 
 | File | Group | Bytes | What it is | SHA-256 |
@@ -35,6 +35,8 @@ The data is in the release [`ed-v1`](../../releases/tag/ed-v1): 39 files, 331.1 
 | `rivers-glo90-snap-2.bin` | water | 8,235,212 | river courses on the mask's water with measured widths (courses 4) | `fa87c5895b6a0ff6df1def67f7908c994747d6effd51de4549b1f9a0c39c9dc1` |
 | `rivers-glo90-arms.bin` | water | 185,836 | river side arms (courses 2-3) | `8748a916ead1e2fd9202e076c9ad6b53d5c2e6427f7fdd3cfca21783b9be057a` |
 | `rivers-glo90-arms-2.bin` | water | 223,228 | river side arms (courses 4) | `e7f7f4408c9bb027b5e61ff1f522beadcda46ead3471986ba3baebb70b753bf7` |
+| `rivers-glo90-snap-3.bin` | water | 6,791,105 | river courses on the mask's water with measured widths, on GLO-90's own grid (courses 5; Earth 2.2.0, decision 0092) | `6e4339b652a6764b310ba71920b8c3e65620258a19a6bab5078ac2b38fe9c160` |
+| `rivers-glo90-arms-3.bin` | water | 218,049 | river side arms (courses 5; Earth 2.2.0) | `bcd502a70140f3929bfc4dd550f4e4a50e5ad651a085a3251bc4fd9911b56e8d` |
 | `stream-heads-1.bin` | water | 4,712,127 | real stream heads and seeps for springs | `bffcc5f7ee6f89bff423e261695f7ec1dd40449af08810c976da7143f25380ad` |
 | `glo90c-index.bin` | terrain | 177,324 | index of the included GLO-90 land heights | `d55d203d436fa7b14d2d6c5de4a412090e9a0bc6f6ce0f70b969481f87926977` |
 | `glo90c-1.bin` | terrain | 39,594,940 | included GLO-90 land heights, part 1 | `69edad31d3df4e66afd1f10fe52ea61e54622c41295a36d510dfaad3813c558e` |

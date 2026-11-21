@@ -96,6 +96,18 @@
                       "sha256":  "e7f7f4408c9bb027b5e61ff1f522beadcda46ead3471986ba3baebb70b753bf7"
                   },
                   {
+                      "name":  "rivers-glo90-snap-3.bin",
+                      "group":  "water",
+                      "bytes":  6791105,
+                      "sha256":  "6e4339b652a6764b310ba71920b8c3e65620258a19a6bab5078ac2b38fe9c160"
+                  },
+                  {
+                      "name":  "rivers-glo90-arms-3.bin",
+                      "group":  "water",
+                      "bytes":  218049,
+                      "sha256":  "bcd502a70140f3929bfc4dd550f4e4a50e5ad651a085a3251bc4fd9911b56e8d"
+                  },
+                  {
                       "name":  "stream-heads-1.bin",
                       "group":  "water",
                       "bytes":  4712127,
